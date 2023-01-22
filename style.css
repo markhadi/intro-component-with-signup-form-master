@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 
-section h1 {
+header h1 {
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.6rem;
@@ -36,7 +36,7 @@ section h1 {
   margin-bottom: 2.4rem;
 }
 
-section p {
+header p {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 2.6rem;
@@ -98,7 +98,7 @@ main form div input::placeholder {
   font-size: 1.4rem;
   line-height: 2.1rem;
   letter-spacing: 0.015em;
-  color: rgba(62, 60, 73, 0.5);
+  color: var(--Grayish-Blue);
 }
 
 main form div input:focus {
@@ -186,13 +186,13 @@ main div.terms span b {
     gap: 6rem;
   }
 
-  section {
+  header {
     display: grid;
     place-content: center;
     max-width: 51rem;
   }
 
-  section h1 {
+  header h1 {
     font-size: 5rem;
     line-height: 5.5rem;
     text-align: left;
@@ -200,7 +200,7 @@ main div.terms span b {
     letter-spacing: -0.01em;
   }
 
-  section p {
+  header p {
     text-align: left;
     margin: 0;
   }
