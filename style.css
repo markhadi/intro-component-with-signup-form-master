@@ -68,10 +68,10 @@ main div.info span b {
 }
 
 main form {
+  background: white;
   padding: 2.4rem;
   border-radius: 1rem;
-  background: white;
-  box-shadow: 0px 8px 4px rgba(62, 60, 73, 0.55);
+  box-shadow: 0px 8px 5px rgba(62, 60, 73, 0.55);
 }
 
 main form div {
@@ -84,7 +84,7 @@ main form div input {
   height: 5.4rem;
   padding: 0 1.6rem;
   outline: none;
-  border: 1px solid hsla(246, 25%, 77%, 50%);
+  border: 1px solid var(--Grayish-Blue);
   border-radius: 0.5rem;
   font-weight: 600;
   font-size: 1.4rem;
@@ -94,22 +94,18 @@ main form div input {
 }
 
 main form div input::placeholder {
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
-  letter-spacing: 0.015em;
   color: var(--Grayish-Blue);
 }
 
 main form div input:focus {
-  border: 1px solid var(--Dark-Blue);
+  border-color: var(--Dark-Blue);
 }
 
 main form div img {
-  display: none;
   position: absolute;
-  top: 20%;
+  top: 22%;
   right: 1.6rem;
+  display: none;
 }
 
 main form div span.alert {
@@ -126,7 +122,7 @@ main form div span.alert {
 main form button {
   width: 100%;
   height: 5.6rem;
-  background: var(--Green);
+  background-color: var(--Green);
   border: 0;
   border-radius: 0.5rem;
   font-weight: 600;
@@ -136,9 +132,10 @@ main form button {
   color: white;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: inset 0px 1px 3px rgba(62, 60, 73, 0.21),
-    inset 0px -3px 5px rgba(62, 60, 73, 0.21);
   margin-bottom: 0.8rem;
+  box-shadow: inset 0px 1px 3px rgb(62 60 73 / 21%),
+    inset 0px -3px 5px rgb(62 60 73 / 21%);
+  transition: all 0.3s ease-in-out;
 }
 
 main form button:hover {
@@ -153,10 +150,10 @@ main div.terms {
 
 main div.terms span {
   display: block;
+  text-align: center;
   font-weight: 500;
   font-size: 1.1rem;
   line-height: 2.1rem;
-  text-align: center;
 }
 
 main div.terms span b {
@@ -166,10 +163,6 @@ main div.terms span b {
 
 .block {
   display: block !important;
-}
-
-.none {
-  display: none !important;
 }
 
 .errInput {
@@ -189,7 +182,6 @@ main div.terms span b {
   header {
     display: grid;
     place-content: center;
-    max-width: 51rem;
   }
 
   header h1 {
